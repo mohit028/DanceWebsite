@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Fruktur&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+#navbar{
+background-color: rgb(219, 15, 15);
+
+}
+
+#navbar ul{
+ display: flex;
+ flex-direction: row;
+ padding: 15px 14px;
+ align-items: center;
+}
+#logo{
+    display: flex;
+    color: white;
+    align-items: center;
+    margin: 0 14px;
+    font-size: 28px;
+    margin-right: 40px;
+}
+#logo img{
+    height: 40px;
+    filter: invert(1);
+}
+#navbar li{
+    list-style: none;
+    font-family: 'Fruktur', cursive;
+    font-weight: bold;
+
+}
+#navbar li a{
+    text-decoration: none;
+    padding: 20px 30px;
+    font-size: 1.5rem;
+}
+
+#navbar li a:hover{
+    color: white;
+}
+#IntroSection{
+    background: center / cover no-repeat url("/static/bg.jpg");
+    color: white;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Fruktur', cursive;
+    font-size: 40px;
+    background-color: crimson;
+    justify-content: center;
+    align-items: center;
+}
+#IntroSection div.small{
+    font-size: 30px;
+}
+#SponsorSection{
+    height: 300px;
+    background-color: rgb(70, 87, 187);
+} 
+#SponsorSection h2{
+        text-align: center;
+        padding: 30px;
+        font-family: 'Fruktur', cursive;
+        font-size: 2rem;
+
+} 
+#sponsors img{
+    
+    height: 150px;
+    padding: 10px 25px;
+    margin: 20px;
+   
+
+}
+#MissionSection{
+    padding: 30px;
+    background-color: white;
+    height: 300px;
+    text-align: center;
+    font-family: 'Lobster', cursive;
+    font-size: 1.2rem;
+}
+
+.card{
+    border: 2px solid black;
+    height: 200px;
+    width: 20%;
+    display: inline-block;
+    margin: 20px 30px;
+    padding-top: 20px;
+    border-radius: 15px;
+
+}
+.card-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.card-img{
+    height: 131px;
+    padding: 0 14px;
+    margin: 5px 9px;
+}
+.card-img img{
+    height: inherit;
+}
+
+#footer{
+    height: 50px;
+    background-color: rgb(16, 17, 17);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

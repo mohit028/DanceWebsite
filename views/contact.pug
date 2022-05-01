@@ -1,0 +1,20 @@
+extends base.pug
+
+block scripts 
+    scripts(src="/statc/index.js")
+block style 
+    style
+      include ../static/style.css
+      include ../static/StyleContact.css
+block content
+    div.container
+        h2 Contact Us
+        form(action="/contact", method="POST")
+            input(type="text", class="myInput", name="name", placeholder="Enter Your Name")
+            input(type="text", class="myInput", name="address", placeholder="Enter Your Address")
+            input(type="email", class="myInput", name="email", placeholder="Enter Your email")
+            input(type="phone", class="myInput", name="phone", placeholder="Enter Your Phone no")
+            button(class="btn")
+                | submit
+    footer#footer   
+        | Copyright © 2022MohitAcademy.com | All Rights Reserved

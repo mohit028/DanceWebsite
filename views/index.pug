@@ -1,0 +1,57 @@
+//- index.pug
+doctype html
+html
+  head
+    title Mohit's Dance Academy 
+    style
+      include ../static/style.css
+  body
+    nav#navbar 
+        ul 
+         div#logo
+           img(src="/static/img/d.png")
+           | MDA
+         li #[a(href='/') Home ]
+         li #[a(href='/') About us]
+         li #[a(href='/contact') Contact Us]
+         li #[a(href='/') Services]
+
+        section#IntroSection 
+            div Welcome to Mohit's Dance Academy 
+            div.small Eat Sleep Dance Repeat 
+
+        section#MissionSection 
+            div our mission
+            div.card
+             h3 Dance Perfection 
+              div.card-box
+              div.card-img
+                img(src="/static/img/logo3.jpg")
+              
+
+            div.card
+               h3 Dance The way you like 
+               div.card-box
+                div.card-img
+                  img(src="/static/img/logo2.jpg")
+               
+
+            div.card
+             h3 Expert Teaching
+             div.card-box
+             div.card-img
+                img(src="/static/img/logo1.webp")
+             
+
+        section#SponsorSection 
+            h2 our sponsors    
+              div#sponsors
+                img(src="/static/img/facebook.png") 
+                img(src="/static/img/twitter.jpg") 
+                img(src="/static/img/skype.png") 
+
+        footer#footer   
+           | Copyright © 2022MohitAcademy.com | All Rights Reserved
+
+    script
+      include ../static/index.js
